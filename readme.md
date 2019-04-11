@@ -7,3 +7,5 @@ Financial statement information must be collected and analyzed by bond agents an
 The Contractor Financials Taxonomy is designed to be used in conjunction with the [Work in Process (WIP) Taxonomy](https://xbrl.us/2016-surety-wip) to help contractors provide machine-readable data to carriers. The WIP Taxonomy was also developed by the Surety Working Group. 
 
 [During the 60-day public exposure period](https://xbrl.us/2019-contractor), contractors, sureties, bond agents, software providers and other stakeholders are encouraged to review the data standards in the taxonomy and provide input on definitions and on elements that should be added. The public review includes a Taxonomy Guide on how to work with the taxonomy, along with sample XBRL-formatted financial documents prepared using the taxonomy.
+
+See [XBRL US](https://xbrl.us/surety) and [Authorized Use / Legal Notice](https://xbrl.us/contractor_legal) for details on this initiative and use of the Contractor Financials Taxonomy.
