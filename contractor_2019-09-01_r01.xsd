@@ -3,13 +3,14 @@
 <xs:schema
   attributeFormDefault="unqualified"
   elementFormDefault="qualified"
-  targetNamespace="http://xbrl.us/contractor/v0.1/2019-03-31/contractor"
-  xmlns:contractor="http://xbrl.us/contractor/v0.1/2019-03-31/contractor"
-  xmlns:dei="http://xbrl.sec.gov/dei-ent-all/2018-01-31"
+  targetNamespace="http://xbrl.us/contractor/v0.1/2019-09-01/contractor"
+  xmlns:contractor="http://xbrl.us/contractor/v0.1/2019-09-01/contractor"
+  xmlns:dei="http://xbrl.sec.gov/dei/2019-01-31"
   xmlns:link="http://www.xbrl.org/2003/linkbase"
   xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
   xmlns:num="http://www.xbrl.org/dtr/type/numeric"
-  xmlns:us-gaap="http://fasb.org/us-gaap/2018-01-31"
+  xmlns:srt="http://fasb.org/srt/2019-01-31"
+  xmlns:us-gaap="http://fasb.org/us-gaap/2019-01-31"
   xmlns:wip="http://xbrl.us/wip/2016-01-31"
   xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
   xmlns:xbrli="http://www.xbrl.org/2003/instance"
@@ -20,14 +21,17 @@
         <xs:appinfo>
             <link:linkbaseRef
               xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
-              xlink:href="contractor_2019-03-31_r01_lab.xml"
+              xlink:href="contractor_2019-09-01_r01_lab.xml"
               xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
               xlink:type="simple"/>
         </xs:appinfo>
     </xs:annotation>
     <xs:import
-      namespace="http://fasb.org/us-gaap/2018-01-31"
-      schemaLocation="http://xbrl.fasb.org/us-gaap/2018/elts/us-gaap-2018-01-31.xsd"/>
+      namespace="http://fasb.org/srt/2019-01-31"
+      schemaLocation="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd"/>
+    <xs:import
+      namespace="http://fasb.org/us-gaap/2019-01-31"
+      schemaLocation="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd"/>
     <xs:import
       namespace="http://www.xbrl.org/2003/instance"
       schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
@@ -41,8 +45,8 @@
       namespace="http://xbrl.org/2005/xbrldt"
       schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
     <xs:import
-      namespace="http://xbrl.sec.gov/dei-ent-all/2018-01-31"
-      schemaLocation="https://xbrl.sec.gov/dei/2018/dei-ent-all-2018-01-31.xsd"/>
+      namespace="http://xbrl.sec.gov/dei/2019-01-31"
+      schemaLocation="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd"/>
     <xs:import
       namespace="http://xbrl.us/wip/2016-01-31"
       schemaLocation="http://taxonomies.xbrl.us/wip/2016/elts/wip-2016-01-31.xsd"/>
@@ -341,6 +345,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -349,6 +354,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -357,6 +363,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -365,6 +372,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -373,6 +381,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -426,7 +435,8 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
-      xbrli:periodType="duration"/>
+      xbrli:balance="debit"
+      xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_BondsInLieueOfRetainage"
@@ -434,6 +444,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -442,6 +453,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -450,6 +462,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -458,6 +471,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -475,6 +489,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -483,6 +498,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -508,6 +524,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -516,6 +533,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -555,15 +573,6 @@
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
-      id="contractor_ContractAssets"
-      name="ContractAssets"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="debit"
-      xbrli:periodType="duration"/>
-    <xs:element
-      contractor:periodIndependent="0"
       id="contractor_ContractAssetsAccount"
       name="ContractAssetsAccount"
       nillable="true"
@@ -578,16 +587,8 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_ContractLiabilities"
-      name="ContractLiabilities"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
-      xbrli:periodType="duration"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_ContractLiabilitiesAccount"
@@ -595,6 +596,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -603,6 +605,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -674,7 +677,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -740,6 +743,15 @@
       xbrli:balance="debit"
       xbrli:periodType="duration"/>
     <xs:element
+      abstract="true"
+      contractor:periodIndependent="0"
+      id="contractor_DocumentAndEntityAbstract"
+      name="DocumentAndEntityAbstract"
+      nillable="true"
+      substitutionGroup="xbrli:item"
+      type="xbrli:stringItemType"
+      xbrli:periodType="duration"/>
+    <xs:element
       contractor:periodIndependent="0"
       id="contractor_DueFromOfficersCurrent"
       name="DueFromOfficersCurrent"
@@ -764,6 +776,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -790,6 +803,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -807,6 +821,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -815,6 +830,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -832,6 +848,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -840,6 +857,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -848,6 +866,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -856,6 +875,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -864,6 +884,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -899,6 +920,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -925,7 +947,16 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
+    <xs:element
+      id="contractor_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterestAndBeforeBonuses"
+      name="IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterestAndBeforeBonuses"
+      nillable="true"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
+      xbrli:periodType="duration"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_InsuranceClaimReceivable"
@@ -933,6 +964,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -941,6 +973,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -949,6 +982,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -957,6 +991,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -965,6 +1000,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -973,6 +1009,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -981,6 +1018,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1043,6 +1081,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1051,15 +1090,8 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_JointVentureIncome"
-      name="JointVentureIncome"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:periodType="duration"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_JointVentureLiabilityCompanyPortion"
@@ -1067,6 +1099,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1102,6 +1135,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1110,6 +1144,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1145,6 +1180,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1153,6 +1189,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1161,6 +1198,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1271,7 +1309,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivableAffiliateNoncurrent"
       name="NotesReceivableAffiliateNoncurrent"
       nillable="true"
@@ -1316,7 +1353,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivableTradeNoncurrent"
       name="NotesReceivableTradeNoncurrent"
       nillable="true"
@@ -1325,7 +1361,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
       name="NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
       nillable="true"
@@ -1334,7 +1369,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromEmployeesNoncurrent"
       name="NotesReceivablefromEmployeesNoncurrent"
       nillable="true"
@@ -1343,7 +1377,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromLessorNoncurrent"
       name="NotesReceivablefromLessorNoncurrent"
       nillable="true"
@@ -1352,7 +1385,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromMortgagePaymentsNoncurrent"
       name="NotesReceivablefromMortgagePaymentsNoncurrent"
       nillable="true"
@@ -1361,7 +1393,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromOfficersNoncurrent"
       name="NotesReceivablefromOfficersNoncurrent"
       nillable="true"
@@ -1370,7 +1401,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromOtherNoncurrent"
       name="NotesReceivablefromOtherNoncurrent"
       nillable="true"
@@ -1379,7 +1409,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromParentNoncurrent"
       name="NotesReceivablefromParentNoncurrent"
       nillable="true"
@@ -1388,7 +1417,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromPartnershipNoncurrent"
       name="NotesReceivablefromPartnershipNoncurrent"
       nillable="true"
@@ -1397,16 +1425,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_NotesReceivablefromRelatedPartiesNoncurrent"
-      name="NotesReceivablefromRelatedPartiesNoncurrent"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="debit"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromStockholdersNoncurrent"
       name="NotesReceivablefromStockholdersNoncurrent"
       nillable="true"
@@ -1415,7 +1433,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromSubsidiariesNoncurrent"
       name="NotesReceivablefromSubsidiariesNoncurrent"
       nillable="true"
@@ -1424,7 +1441,6 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
       name="NotesReceivablefromUnrelatedPartiesNoncurrent"
       nillable="true"
@@ -1475,9 +1491,9 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
       id="contractor_PlantAndBuildings"
       name="PlantAndBuildings"
       nillable="true"
@@ -1492,6 +1508,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1536,6 +1553,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1544,6 +1562,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1552,6 +1571,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1560,6 +1580,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1568,15 +1589,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_RetainagesPayable"
-      name="RetainagesPayable"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1594,6 +1607,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1602,7 +1616,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1638,6 +1652,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1700,6 +1715,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1735,6 +1751,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
@@ -1743,6 +1760,7 @@
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
