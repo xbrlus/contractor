@@ -52,8 +52,8 @@
       schemaLocation="http://taxonomies.xbrl.us/wip/2016/elts/wip-2016-01-31.xsd"/>
     <xs:element
       contractor:periodIndependent="0"
-      id="contractor_AccountsPayableNoncurrent"
-      name="AccountsPayableNoncurrent"
+      id="contractor_AccountsPayableAndAccruedLiabilitiesNoncurrent"
+      name="AccountsPayableAndAccruedLiabilitiesNoncurrent"
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
@@ -439,8 +439,8 @@
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
-      id="contractor_BondsInLieueOfRetainage"
-      name="BondsInLieueOfRetainage"
+      id="contractor_BondsInLieuOfRetainage"
+      name="BondsInLieuOfRetainage"
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
@@ -647,15 +647,6 @@
       contractor:periodIndependent="0"
       id="contractor_CurrentNotesPayable"
       name="CurrentNotesPayable"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_CurrentRelatedPartyPayable"
-      name="CurrentRelatedPartyPayable"
       nillable="true"
       substitutionGroup="xbrli:item"
       type="xbrli:monetaryItemType"
@@ -950,6 +941,7 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
+      contractor:periodIndependent="0"
       id="contractor_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterestAndBeforeBonuses"
       name="IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterestAndBeforeBonuses"
       nillable="true"
@@ -1247,15 +1239,6 @@
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
-      id="contractor_NotesPayableOtherCurrent"
-      name="NotesPayableOtherCurrent"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="credit"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
       id="contractor_NotesPayableParentCurrent"
       name="NotesPayableParentCurrent"
       nillable="true"
@@ -1466,6 +1449,15 @@
       type="xbrli:monetaryItemType"
       xbrli:balance="debit"
       xbrli:periodType="duration"/>
+    <xs:element
+      contractor:periodIndependent="0"
+      id="contractor_OtherNotesPayableCurrent"
+      name="OtherNotesPayableCurrent"
+      nillable="true"
+      substitutionGroup="xbrli:item"
+      type="xbrli:monetaryItemType"
+      xbrli:balance="credit"
+      xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_Patents"

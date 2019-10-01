@@ -7,12 +7,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
     <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
       xlink:type="simple"/>
     <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/IncomeStatement"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_IncomeStatement"
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfComprehensiveIncome"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
       xlink:type="simple"/>
     <calculationLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -818,17 +822,6 @@
           xlink:to="us-gaap_MachineryAndEquipmentGross"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_RightOfUseAsset"
-          xlink:label="contractor_RightOfUseAsset"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_PropertyPlantAndEquipmentGross"
-          xlink:to="contractor_RightOfUseAsset"
-          xlink:type="arc"/>
-        <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_FurnitureAndFixturesGross"
           xlink:label="us-gaap_FurnitureAndFixturesGross"
           xlink:type="locator"/>
@@ -992,17 +985,6 @@
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_PropertyPlantAndEquipmentGross"
           xlink:to="contractor_EquipmentOther"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_EquityInLand"
-          xlink:label="contractor_EquityInLand"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_PropertyPlantAndEquipmentGross"
-          xlink:to="contractor_EquityInLand"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_ConstructionEquipment"
@@ -1812,6 +1794,17 @@
           xlink:to="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
           xlink:type="arc"/>
         <loc
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_AdvancesDueFromJointVenture"
+          xlink:label="contractor_AdvancesDueFromJointVenture"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_AssetsNoncurrent"
+          xlink:to="contractor_AdvancesDueFromJointVenture"
+          xlink:type="arc"/>
+        <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableNoncurrent"
           xlink:label="us-gaap_AllowanceForDoubtfulAccountsReceivableNoncurrent"
           xlink:type="locator"/>
@@ -1834,6 +1827,17 @@
           xlink:to="contractor_Annuities"
           xlink:type="arc"/>
         <loc
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_RightOfUseAsset"
+          xlink:label="contractor_RightOfUseAsset"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_AssetsNoncurrent"
+          xlink:to="contractor_RightOfUseAsset"
+          xlink:type="arc"/>
+        <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_DefinedBenefitPlanAmountsRecognizedInBalanceSheet"
           xlink:label="us-gaap_DefinedBenefitPlanAmountsRecognizedInBalanceSheet"
           xlink:type="locator"/>
@@ -1845,15 +1849,15 @@
           xlink:to="us-gaap_DefinedBenefitPlanAmountsRecognizedInBalanceSheet"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_BondsInLieueOfRetainage"
-          xlink:label="contractor_BondsInLieueOfRetainage"
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_BondsInLieuOfRetainage"
+          xlink:label="contractor_BondsInLieuOfRetainage"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_AssetsNoncurrent"
-          xlink:to="contractor_BondsInLieueOfRetainage"
+          xlink:to="contractor_BondsInLieuOfRetainage"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_Bonds"
@@ -2197,15 +2201,15 @@
           xlink:to="contractor_InterestInJointVenture"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_AdvancesDueFromJointVenture"
-          xlink:label="contractor_AdvancesDueFromJointVenture"
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_EquityInLand"
+          xlink:label="contractor_EquityInLand"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_AssetsNoncurrent"
-          xlink:to="contractor_AdvancesDueFromJointVenture"
+          xlink:to="contractor_EquityInLand"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_DepositAssets"
@@ -2692,15 +2696,15 @@
           xlink:to="contractor_CurrentMaturitiesofLongTermDebt"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_CurrentRelatedPartyPayable"
-          xlink:label="contractor_CurrentRelatedPartyPayable"
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_DueToRelatedPartiesCurrent"
+          xlink:label="us-gaap_DueToRelatedPartiesCurrent"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_LiabilitiesCurrent"
-          xlink:to="contractor_CurrentRelatedPartyPayable"
+          xlink:to="us-gaap_DueToRelatedPartiesCurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_CurrentNotesPayable"
@@ -2923,15 +2927,15 @@
           xlink:to="contractor_NotesPayableEquipmentCurrent"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_NotesPayableOtherCurrent"
-          xlink:label="contractor_NotesPayableOtherCurrent"
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_OtherNotesPayableCurrent"
+          xlink:label="contractor_OtherNotesPayableCurrent"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_LiabilitiesCurrent"
-          xlink:to="contractor_NotesPayableOtherCurrent"
+          xlink:to="contractor_OtherNotesPayableCurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_AccruedUnionBenefits"
@@ -3022,17 +3026,6 @@
           xlink:to="contractor_NotesPayableShareholdersCurrent"
           xlink:type="arc"/>
         <loc
-          xlink:href="http://taxonomies.xbrl.us/wip/2016/elts/wip-2016-01-31.xsd#wip_BillingsInExcessOfCostAndEarnings"
-          xlink:label="wip_BillingsInExcessOfCostAndEarnings"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_LiabilitiesCurrent"
-          xlink:to="wip_BillingsInExcessOfCostAndEarnings"
-          xlink:type="arc"/>
-        <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_UnearnedAdvances"
           xlink:label="contractor_UnearnedAdvances"
           xlink:type="locator"/>
@@ -3053,6 +3046,17 @@
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_LiabilitiesCurrent"
           xlink:to="contractor_SCorpDistributionPayableCurrent"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://taxonomies.xbrl.us/wip/2016/elts/wip-2016-01-31.xsd#wip_BillingsInExcessOfCostAndEarnings"
+          xlink:label="wip_BillingsInExcessOfCostAndEarnings"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_LiabilitiesCurrent"
+          xlink:to="wip_BillingsInExcessOfCostAndEarnings"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_Liabilities"
@@ -3235,15 +3239,15 @@
           xlink:to="us-gaap_DueToEmployeesNoncurrent"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_AccountsPayableNoncurrent"
-          xlink:label="contractor_AccountsPayableNoncurrent"
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_AccountsPayableAndAccruedLiabilitiesNoncurrent"
+          xlink:label="contractor_AccountsPayableAndAccruedLiabilitiesNoncurrent"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_LiabilitiesNoncurrent"
-          xlink:to="contractor_AccountsPayableNoncurrent"
+          xlink:to="contractor_AccountsPayableAndAccruedLiabilitiesNoncurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_DueToOfficersOrStockholdersNoncurrent"
@@ -3727,23 +3731,12 @@
           xlink:type="arc"/>
     </calculationLink>
     <calculationLink
-      xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/IncomeStatement"
+      xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
       xlink:type="extended">
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_GrossProfit"
-          xlink:label="us-gaap_GrossProfit"
-          xlink:type="locator"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_Revenues"
           xlink:label="us-gaap_Revenues"
           xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_GrossProfit"
-          xlink:to="us-gaap_Revenues"
-          xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_RevenueFromContractWithCustomerIncludingAssessedTax"
           xlink:label="us-gaap_RevenueFromContractWithCustomerIncludingAssessedTax"
@@ -3756,8 +3749,19 @@
           xlink:to="us-gaap_RevenueFromContractWithCustomerIncludingAssessedTax"
           xlink:type="arc"/>
         <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostOfGoodsAndServicesSold"
-          xlink:label="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_GrossProfit"
+          xlink:label="us-gaap_GrossProfit"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_GrossProfit"
+          xlink:to="us-gaap_Revenues"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
+          xlink:label="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:type="locator"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostDirectMaterial"
@@ -3767,7 +3771,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:from="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:to="us-gaap_CostDirectMaterial"
           xlink:type="arc"/>
         <loc
@@ -3778,7 +3782,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:from="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:to="us-gaap_CostDirectLabor"
           xlink:type="arc"/>
         <loc
@@ -3789,7 +3793,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:from="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:to="us-gaap_CostOfGoodsAndServicesSoldOverhead"
           xlink:type="arc"/>
         <loc
@@ -3800,7 +3804,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:from="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:to="us-gaap_LossOnContracts"
           xlink:type="arc"/>
         <loc
@@ -3811,12 +3815,12 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostOfGoodsAndServicesSold"
+          xlink:from="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
           xlink:to="contractor_CostOfSubcontractor"
           xlink:type="arc"/>
         <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
-          xlink:label="us-gaap_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortization"
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostOfGoodsAndServicesSold"
+          xlink:label="us-gaap_CostOfGoodsAndServicesSold"
           xlink:type="locator"/>
         <calculationArc
           order="1"
@@ -3836,15 +3840,11 @@
           xlink:from="us-gaap_CostOfGoodsAndServicesSold"
           xlink:to="us-gaap_CostDepreciationAmortizationAndDepletion"
           xlink:type="arc"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostsAndExpenses"
-          xlink:label="us-gaap_CostsAndExpenses"
-          xlink:type="locator"/>
         <calculationArc
           order="1"
-          weight="1"
+          weight="-1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_GrossProfit"
           xlink:to="us-gaap_CostOfGoodsAndServicesSold"
           xlink:type="arc"/>
         <loc
@@ -3859,6 +3859,10 @@
           xlink:to="us-gaap_GrossProfit"
           xlink:type="arc"/>
         <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OperatingCostsAndExpenses"
+          xlink:label="us-gaap_OperatingCostsAndExpenses"
+          xlink:type="locator"/>
+        <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_LegalFees"
           xlink:label="us-gaap_LegalFees"
           xlink:type="locator"/>
@@ -3866,19 +3870,19 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_OperatingCostsAndExpenses"
           xlink:to="us-gaap_LegalFees"
           xlink:type="arc"/>
         <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OperatingExpenses"
-          xlink:label="us-gaap_OperatingExpenses"
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_CostOfOccupancyAndUtilities"
+          xlink:label="contractor_CostOfOccupancyAndUtilities"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
-          xlink:to="us-gaap_OperatingExpenses"
+          xlink:from="us-gaap_OperatingCostsAndExpenses"
+          xlink:to="contractor_CostOfOccupancyAndUtilities"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherCostAndExpenseOperating"
@@ -3888,7 +3892,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_OperatingCostsAndExpenses"
           xlink:to="us-gaap_OtherCostAndExpenseOperating"
           xlink:type="arc"/>
         <loc
@@ -3899,20 +3903,24 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_OperatingCostsAndExpenses"
           xlink:to="us-gaap_OtherExpenses"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_CostOfOccupancyAndUtilities"
-          xlink:label="contractor_CostOfOccupancyAndUtilities"
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OperatingExpenses"
+          xlink:label="us-gaap_OperatingExpenses"
           xlink:type="locator"/>
         <calculationArc
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
-          xlink:to="contractor_CostOfOccupancyAndUtilities"
+          xlink:from="us-gaap_OperatingExpenses"
+          xlink:to="us-gaap_OperatingCostsAndExpenses"
           xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_SellingGeneralAndAdministrativeExpense"
+          xlink:label="us-gaap_SellingGeneralAndAdministrativeExpense"
+          xlink:type="locator"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_ProvisionForDoubtfulAccounts"
           xlink:label="us-gaap_ProvisionForDoubtfulAccounts"
@@ -3921,9 +3929,13 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_SellingGeneralAndAdministrativeExpense"
           xlink:to="us-gaap_ProvisionForDoubtfulAccounts"
           xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_SellingAndMarketingExpense"
+          xlink:label="us-gaap_SellingAndMarketingExpense"
+          xlink:type="locator"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_EstimatingAndProspectingJobExpense"
           xlink:label="contractor_EstimatingAndProspectingJobExpense"
@@ -3932,19 +3944,8 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_SellingAndMarketingExpense"
           xlink:to="contractor_EstimatingAndProspectingJobExpense"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_SellingAndMarketingExpense"
-          xlink:label="us-gaap_SellingAndMarketingExpense"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
-          xlink:to="us-gaap_SellingAndMarketingExpense"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_DiscretionaryBonusExpense"
@@ -3954,7 +3955,7 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_SellingAndMarketingExpense"
           xlink:to="contractor_DiscretionaryBonusExpense"
           xlink:type="arc"/>
         <loc
@@ -3965,8 +3966,15 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_SellingAndMarketingExpense"
           xlink:to="us-gaap_SellingExpense"
+          xlink:type="arc"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_SellingGeneralAndAdministrativeExpense"
+          xlink:to="us-gaap_SellingAndMarketingExpense"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_GeneralAndAdministrativeExpense"
@@ -4141,59 +4149,15 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:from="us-gaap_SellingGeneralAndAdministrativeExpense"
           xlink:to="us-gaap_GeneralAndAdministrativeExpense"
           xlink:type="arc"/>
         <calculationArc
           order="1"
-          weight="-1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_GrossProfit"
-          xlink:to="us-gaap_CostsAndExpenses"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherOperatingIncomeExpenseNet"
-          xlink:label="us-gaap_OtherOperatingIncomeExpenseNet"
-          xlink:type="locator"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherIncome"
-          xlink:label="us-gaap_OtherIncome"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_OtherOperatingIncomeExpenseNet"
-          xlink:to="us-gaap_OtherIncome"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InterestIncomeExpenseNet"
-          xlink:label="us-gaap_InterestIncomeExpenseNet"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_OperatingIncomeLoss"
-          xlink:to="us-gaap_InterestIncomeExpenseNet"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InterestAndDividendIncomeOperating"
-          xlink:label="us-gaap_InterestAndDividendIncomeOperating"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_OperatingIncomeLoss"
-          xlink:to="us-gaap_InterestAndDividendIncomeOperating"
-          xlink:type="arc"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_GrossProfit"
-          xlink:to="us-gaap_OperatingIncomeLoss"
+          xlink:from="us-gaap_OperatingExpenses"
+          xlink:to="us-gaap_SellingGeneralAndAdministrativeExpense"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_GainLossOnDispositionOfAssets1"
@@ -4222,17 +4186,6 @@
           xlink:to="us-gaap_GainLossOnSaleOfPropertyPlantEquipment"
           xlink:type="arc"/>
         <loc
-          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_MarketableSecuritiesUnrealizedGainLoss"
-          xlink:label="us-gaap_MarketableSecuritiesUnrealizedGainLoss"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_GainLossOnDispositionOfAssets1"
-          xlink:to="us-gaap_MarketableSecuritiesUnrealizedGainLoss"
-          xlink:type="arc"/>
-        <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_DisposalGroupNotDiscontinuedOperationGainLossOnDisposal"
           xlink:label="us-gaap_DisposalGroupNotDiscontinuedOperationGainLossOnDisposal"
           xlink:type="locator"/>
@@ -4247,6 +4200,182 @@
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_NetIncomeLoss"
           xlink:label="us-gaap_NetIncomeLoss"
           xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NetIncomeLoss"
+          xlink:to="us-gaap_GainLossOnDispositionOfAssets1"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_CostsAndExpenses"
+          xlink:label="us-gaap_CostsAndExpenses"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_CostsAndExpenses"
+          xlink:to="us-gaap_OperatingExpenses"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherOperatingIncomeExpenseNet"
+          xlink:label="us-gaap_OtherOperatingIncomeExpenseNet"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherIncome"
+          xlink:label="us-gaap_OtherIncome"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_OtherOperatingIncomeExpenseNet"
+          xlink:to="us-gaap_OtherIncome"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InterestAndDividendIncomeOperating"
+          xlink:label="us-gaap_InterestAndDividendIncomeOperating"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InterestIncomeExpenseNet"
+          xlink:label="us-gaap_InterestIncomeExpenseNet"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_InterestAndDividendIncomeOperating"
+          xlink:to="us-gaap_InterestIncomeExpenseNet"
+          xlink:type="arc"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_OperatingIncomeLoss"
+          xlink:to="us-gaap_InterestAndDividendIncomeOperating"
+          xlink:type="arc"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_GrossProfit"
+          xlink:to="us-gaap_OtherOperatingIncomeExpenseNet"
+          xlink:type="arc"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_GrossProfit"
+          xlink:to="us-gaap_OperatingIncomeLoss"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InvestmentIncomeNonoperating"
+          xlink:label="us-gaap_InvestmentIncomeNonoperating"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_InvestmentIncomeInterest"
+          xlink:label="us-gaap_InvestmentIncomeInterest"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_InvestmentIncomeNonoperating"
+          xlink:to="us-gaap_InvestmentIncomeInterest"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_IncomeLossFromEquityMethodInvestments"
+          xlink:label="us-gaap_IncomeLossFromEquityMethodInvestments"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_InvestmentIncomeNonoperating"
+          xlink:to="us-gaap_IncomeLossFromEquityMethodInvestments"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_NonoperatingIncomeExpense"
+          xlink:label="us-gaap_NonoperatingIncomeExpense"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NonoperatingIncomeExpense"
+          xlink:to="us-gaap_InvestmentIncomeNonoperating"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherNonoperatingGainsLosses"
+          xlink:label="us-gaap_OtherNonoperatingGainsLosses"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NonoperatingIncomeExpense"
+          xlink:to="us-gaap_OtherNonoperatingGainsLosses"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherNonoperatingIncome"
+          xlink:label="us-gaap_OtherNonoperatingIncome"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NonoperatingIncomeExpense"
+          xlink:to="us-gaap_OtherNonoperatingIncome"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherNonoperatingIncomeExpense"
+          xlink:label="us-gaap_OtherNonoperatingIncomeExpense"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NonoperatingIncomeExpense"
+          xlink:to="us-gaap_OtherNonoperatingIncomeExpense"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:label="us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"
+          xlink:label="us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:to="us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_IncomeTaxExpenseBenefit"
+          xlink:label="us-gaap_IncomeTaxExpenseBenefit"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="-1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:to="us-gaap_IncomeTaxExpenseBenefit"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_ProfitLoss"
+          xlink:label="us-gaap_ProfitLoss"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_ProfitLoss"
+          xlink:to="us-gaap_IncomeLossFromContinuingOperationsIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTax"
           xlink:label="us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTax"
@@ -4255,8 +4384,26 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_NetIncomeLoss"
+          xlink:from="us-gaap_ProfitLoss"
           xlink:to="us-gaap_IncomeLossFromDiscontinuedOperationsNetOfTax"
+          xlink:type="arc"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NetIncomeLoss"
+          xlink:to="us-gaap_ProfitLoss"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_NetIncomeLossAttributableToNoncontrollingInterest"
+          xlink:label="us-gaap_NetIncomeLossAttributableToNoncontrollingInterest"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="-1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NetIncomeLoss"
+          xlink:to="us-gaap_NetIncomeLossAttributableToNoncontrollingInterest"
           xlink:type="arc"/>
         <loc
           xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
@@ -4266,8 +4413,60 @@
           order="1"
           weight="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_NetIncomeLoss"
+          xlink:from="us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
+          xlink:to="us-gaap_NetIncomeLoss"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_PreferredStockDividendsAndOtherAdjustments"
+          xlink:label="us-gaap_PreferredStockDividendsAndOtherAdjustments"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="-1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
+          xlink:to="us-gaap_PreferredStockDividendsAndOtherAdjustments"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:label="us-gaap_ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest"
           xlink:to="us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
+          xlink:type="arc"/>
+    </calculationLink>
+    <calculationLink
+      xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
+      xlink:type="extended">
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_ComprehensiveIncomeNetOfTax"
+          xlink:label="us-gaap_ComprehensiveIncomeNetOfTax"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_NetIncomeLoss"
+          xlink:label="us-gaap_NetIncomeLoss"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_ComprehensiveIncomeNetOfTax"
+          xlink:to="us-gaap_NetIncomeLoss"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd#us-gaap_OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent"
+          xlink:label="us-gaap_OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent"
+          xlink:type="locator"/>
+        <calculationArc
+          order="1"
+          weight="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+          xlink:from="us-gaap_ComprehensiveIncomeNetOfTax"
+          xlink:to="us-gaap_OtherComprehensiveIncomeLossNetOfTaxPortionAttributableToParent"
           xlink:type="arc"/>
     </calculationLink>
 </linkbase>

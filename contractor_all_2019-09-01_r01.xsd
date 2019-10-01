@@ -25,11 +25,18 @@
                 <link:usedOn>link:calculationLink</link:usedOn>
             </link:roleType>
             <link:roleType
-              id="roleType_IncomeStatement"
-              roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/IncomeStatement">
-                <link:definition>200 - Income Statement</link:definition>
+              id="roleType_StatementOfIncome"
+              roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome">
+                <link:definition>200 - Statement of Income</link:definition>
                 <link:usedOn>link:presentationLink</link:usedOn>
                 <link:usedOn>link:definitionLink</link:usedOn>
+                <link:usedOn>link:calculationLink</link:usedOn>
+            </link:roleType>
+            <link:roleType
+              id="roleType_StatementOfComprehensiveIncome"
+              roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome">
+                <link:definition>201 - Statement of Comprehensive Income</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
                 <link:usedOn>link:calculationLink</link:usedOn>
             </link:roleType>
             <link:roleType
