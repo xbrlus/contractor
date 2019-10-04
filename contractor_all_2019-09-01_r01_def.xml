@@ -8,24 +8,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
     <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
-      xlink:type="simple"/>
-    <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
-      xlink:type="simple"/>
-    <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
-      xlink:type="simple"/>
-    <arcroleRef
       arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
-      xlink:type="simple"/>
-    <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/all"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
       xlink:type="simple"/>
     <arcroleRef
       arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"
@@ -34,6 +18,22 @@
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
+      xlink:type="simple"/>
+    <arcroleRef
+      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+      xlink:type="simple"/>
+    <arcroleRef
+      arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
+      xlink:type="simple"/>
+    <arcroleRef
+      arcroleURI="http://xbrl.org/int/dim/arcrole/all"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
       xlink:type="simple"/>
     <definitionLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -4589,6 +4589,42 @@
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_NetIncomeLossAbstract"
           xlink:to="us-gaap_NetIncomeLossAvailableToCommonStockholdersBasic"
+          xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+      xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
+      xlink:type="extended">
+        <loc
+          xlink:href="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd#srt_RestatementAxis"
+          xlink:label="srt_RestatementAxis"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd#srt_RestatementDomain"
+          xlink:label="srt_RestatementDomain"
+          xlink:type="locator"/>
+        <definitionArc
+          order="1"
+          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+          xlink:from="srt_RestatementAxis"
+          xlink:to="srt_RestatementDomain"
+          xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+      xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:type="extended">
+        <loc
+          xlink:href="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd#srt_RestatementAxis"
+          xlink:label="srt_RestatementAxis"
+          xlink:type="locator"/>
+        <loc
+          xlink:href="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd#srt_RestatementDomain"
+          xlink:label="srt_RestatementDomain"
+          xlink:type="locator"/>
+        <definitionArc
+          order="1"
+          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+          xlink:from="srt_RestatementAxis"
+          xlink:to="srt_RestatementDomain"
           xlink:type="arc"/>
     </definitionLink>
 </linkbase>
