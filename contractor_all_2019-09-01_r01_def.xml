@@ -16,8 +16,12 @@
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
       xlink:type="simple"/>
     <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+      arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
       xlink:type="simple"/>
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -28,12 +32,8 @@
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"
       xlink:type="simple"/>
     <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
-      xlink:type="simple"/>
-    <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
+      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
       xlink:type="simple"/>
     <definitionLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"

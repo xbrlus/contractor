@@ -7,16 +7,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
     <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfComprehensiveIncome"
-      xlink:type="simple"/>
-    <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
       xlink:type="simple"/>
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfComprehensiveIncome"
       xlink:type="simple"/>
     <calculationLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
