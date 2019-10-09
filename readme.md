@@ -1,5 +1,4 @@
-# XBRL US Contractor Financials Taxonomy 
-## development version
+# XBRL US Contractor Financials Taxonomy
 
 The [XBRL US Surety Working Group](https://xbrl.us/wipsurety-working-group) has developed this draft release of the Contractor Financials Taxonomy, which contains data standards to capture income statement and balance sheet information about contractors. The taxonomy was created by starting with an initial set of data standards contributed by Crowe LLP, a public accounting, consulting, and technology firm. The Surety Working Group, which is comprised of surety carriers, bond agents, and software companies, then further refined the data fields and definitions, and expanded on the initial set of standards. 
 
