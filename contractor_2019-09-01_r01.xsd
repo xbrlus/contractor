@@ -743,6 +743,14 @@
       type="xbrli:stringItemType"
       xbrli:periodType="duration"/>
     <xs:element
+      abstract="true"
+      id="contractor_DocumentInformationAbstract"
+      name="DocumentInformationAbstract"
+      nillable="true"
+      substitutionGroup="xbrli:item"
+      type="xbrli:stringItemType"
+      xbrli:periodType="duration"/>
+    <xs:element
       contractor:periodIndependent="0"
       id="contractor_DueFromOfficersCurrent"
       name="DueFromOfficersCurrent"
@@ -780,15 +788,6 @@
       xbrli:periodType="instant"/>
     <xs:element
       contractor:periodIndependent="0"
-      id="contractor_DuefromParentNoncurrent"
-      name="DuefromParentNoncurrent"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="debit"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
       id="contractor_DuefromPartnershipNoncurrent"
       name="DuefromPartnershipNoncurrent"
       nillable="true"
@@ -797,23 +796,13 @@
       xbrli:balance="debit"
       xbrli:periodType="instant"/>
     <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_DuefromStockholdersNoncurrent"
-      name="DuefromStockholdersNoncurrent"
+      abstract="true"
+      id="contractor_EntityInformationAbstract"
+      name="EntityInformationAbstract"
       nillable="true"
       substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="debit"
-      xbrli:periodType="instant"/>
-    <xs:element
-      contractor:periodIndependent="0"
-      id="contractor_DuefromSubsidiariesNoncurrent"
-      name="DuefromSubsidiariesNoncurrent"
-      nillable="true"
-      substitutionGroup="xbrli:item"
-      type="xbrli:monetaryItemType"
-      xbrli:balance="debit"
-      xbrli:periodType="instant"/>
+      type="xbrli:stringItemType"
+      xbrli:periodType="duration"/>
     <xs:element
       contractor:periodIndependent="0"
       id="contractor_EquipmentOther"

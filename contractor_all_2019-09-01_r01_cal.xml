@@ -7,16 +7,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
     <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
-      xlink:type="simple"/>
-    <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
       xlink:type="simple"/>
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfComprehensiveIncome"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
       xlink:type="simple"/>
     <calculationLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -1585,28 +1585,6 @@
           xlink:to="contractor_AccountsReceivableAdvancestoSubcontractorsNoncurrent"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromStockholdersNoncurrent"
-          xlink:label="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_AssetsNoncurrent"
-          xlink:to="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromParentNoncurrent"
-          xlink:label="contractor_DuefromParentNoncurrent"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_AssetsNoncurrent"
-          xlink:to="contractor_DuefromParentNoncurrent"
-          xlink:type="arc"/>
-        <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromPartnershipNoncurrent"
           xlink:label="contractor_DuefromPartnershipNoncurrent"
           xlink:type="locator"/>
@@ -1627,17 +1605,6 @@
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
           xlink:from="us-gaap_AssetsNoncurrent"
           xlink:to="us-gaap_DueFromRelatedPartiesNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromSubsidiariesNoncurrent"
-          xlink:label="contractor_DuefromSubsidiariesNoncurrent"
-          xlink:type="locator"/>
-        <calculationArc
-          order="1"
-          weight="1"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
-          xlink:from="us-gaap_AssetsNoncurrent"
-          xlink:to="contractor_DuefromSubsidiariesNoncurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_NotesReceivableAffiliateNoncurrent"

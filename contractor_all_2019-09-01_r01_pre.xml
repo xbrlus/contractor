@@ -7,10 +7,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
     <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
-      xlink:type="simple"/>
-    <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
       xlink:type="simple"/>
@@ -21,6 +17,10 @@
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfComprehensiveIncome"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfComprehensiveIncome"
+      xlink:type="simple"/>
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
       xlink:type="simple"/>
     <presentationLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -1590,31 +1590,11 @@
           xlink:to="us-gaap_DueFromAffiliateNoncurrent_1"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromStockholdersNoncurrent"
-          xlink:label="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="locator"/>
-        <presentationArc
-          order="38"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromParentNoncurrent"
-          xlink:label="contractor_DuefromParentNoncurrent"
-          xlink:type="locator"/>
-        <presentationArc
-          order="39"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromParentNoncurrent"
-          xlink:type="arc"/>
-        <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromPartnershipNoncurrent"
           xlink:label="contractor_DuefromPartnershipNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="40"
+          order="38"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_DuefromPartnershipNoncurrent"
@@ -1624,27 +1604,17 @@
           xlink:label="us-gaap_DueFromRelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="41"
+          order="39"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="us-gaap_DueFromRelatedPartiesNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromSubsidiariesNoncurrent"
-          xlink:label="contractor_DuefromSubsidiariesNoncurrent"
-          xlink:type="locator"/>
-        <presentationArc
-          order="42"
-          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromSubsidiariesNoncurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_NotesReceivableAffiliateNoncurrent"
           xlink:label="contractor_NotesReceivableAffiliateNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="43"
+          order="40"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivableAffiliateNoncurrent"
@@ -1654,7 +1624,7 @@
           xlink:label="contractor_NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="44"
+          order="41"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
@@ -1664,7 +1634,7 @@
           xlink:label="contractor_NotesReceivablefromEmployeesNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="45"
+          order="42"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromEmployeesNoncurrent"
@@ -1674,7 +1644,7 @@
           xlink:label="contractor_NotesReceivablefromLessorNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="46"
+          order="43"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromLessorNoncurrent"
@@ -1684,7 +1654,7 @@
           xlink:label="contractor_NotesReceivablefromMortgagePaymentsNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="47"
+          order="44"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromMortgagePaymentsNoncurrent"
@@ -1694,7 +1664,7 @@
           xlink:label="contractor_NotesReceivablefromOfficersNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="48"
+          order="45"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromOfficersNoncurrent"
@@ -1704,7 +1674,7 @@
           xlink:label="contractor_NotesReceivablefromOtherNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="49"
+          order="46"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromOtherNoncurrent"
@@ -1714,7 +1684,7 @@
           xlink:label="contractor_NotesReceivablefromParentNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="50"
+          order="47"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromParentNoncurrent"
@@ -1724,7 +1694,7 @@
           xlink:label="contractor_NotesReceivablefromPartnershipNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="51"
+          order="48"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromPartnershipNoncurrent"
@@ -1734,7 +1704,7 @@
           xlink:label="us-gaap_NotesReceivableRelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="52"
+          order="49"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="us-gaap_NotesReceivableRelatedPartiesNoncurrent"
@@ -1744,7 +1714,7 @@
           xlink:label="contractor_NotesReceivablefromStockholdersNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="53"
+          order="50"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromStockholdersNoncurrent"
@@ -1754,7 +1724,7 @@
           xlink:label="contractor_NotesReceivablefromSubsidiariesNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="54"
+          order="51"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromSubsidiariesNoncurrent"
@@ -1764,7 +1734,7 @@
           xlink:label="contractor_NotesReceivableTradeNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="55"
+          order="52"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivableTradeNoncurrent"
@@ -1774,7 +1744,7 @@
           xlink:label="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <presentationArc
-          order="56"
+          order="53"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
@@ -1784,7 +1754,7 @@
           xlink:label="contractor_AdvancesDueFromJointVenture"
           xlink:type="locator"/>
         <presentationArc
-          order="57"
+          order="54"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_AdvancesDueFromJointVenture"
@@ -4620,23 +4590,73 @@
           xlink:label="contractor_DocumentAndEntityAbstract"
           xlink:type="locator"/>
         <loc
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DocumentInformationAbstract"
+          xlink:label="contractor_DocumentInformationAbstract"
+          xlink:type="locator"/>
+        <presentationArc
+          order="1"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:to="contractor_DocumentInformationAbstract"
+          xlink:type="arc"/>
+        <loc
           xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_DocumentPeriodEndDate"
           xlink:label="dei_DocumentPeriodEndDate"
           xlink:type="locator"/>
         <presentationArc
           order="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:from="contractor_DocumentInformationAbstract"
           xlink:to="dei_DocumentPeriodEndDate"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_DocumentFiscalYearFocus"
+          xlink:label="dei_DocumentFiscalYearFocus"
+          xlink:type="locator"/>
+        <presentationArc
+          order="2"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_DocumentInformationAbstract"
+          xlink:to="dei_DocumentFiscalYearFocus"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_DocumentFiscalPeriodFocus"
+          xlink:label="dei_DocumentFiscalPeriodFocus"
+          xlink:type="locator"/>
+        <presentationArc
+          order="3"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_DocumentInformationAbstract"
+          xlink:to="dei_DocumentFiscalPeriodFocus"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_DocumentCreationDate"
+          xlink:label="dei_DocumentCreationDate"
+          xlink:type="locator"/>
+        <presentationArc
+          order="4"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_DocumentInformationAbstract"
+          xlink:to="dei_DocumentCreationDate"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="contractor_2019-09-01_r01.xsd#contractor_EntityInformationAbstract"
+          xlink:label="contractor_EntityInformationAbstract"
+          xlink:type="locator"/>
+        <presentationArc
+          order="2"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:to="contractor_EntityInformationAbstract"
           xlink:type="arc"/>
         <loc
           xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_EntityRegistrantName"
           xlink:label="dei_EntityRegistrantName"
           xlink:type="locator"/>
         <presentationArc
-          order="2"
+          order="1"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:from="contractor_EntityInformationAbstract"
           xlink:to="dei_EntityRegistrantName"
           xlink:type="arc"/>
         <loc
@@ -4644,9 +4664,9 @@
           xlink:label="dei_EntityDataUniversalNumberingSystemNumber"
           xlink:type="locator"/>
         <presentationArc
-          order="3"
+          order="2"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:from="contractor_EntityInformationAbstract"
           xlink:to="dei_EntityDataUniversalNumberingSystemNumber"
           xlink:type="arc"/>
         <loc
@@ -4654,9 +4674,9 @@
           xlink:label="dei_EntityTaxIdentificationNumber"
           xlink:type="locator"/>
         <presentationArc
-          order="4"
+          order="3"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:from="contractor_EntityInformationAbstract"
           xlink:to="dei_EntityTaxIdentificationNumber"
           xlink:type="arc"/>
         <loc
@@ -4664,9 +4684,9 @@
           xlink:label="dei_CurrentFiscalYearEndDate"
           xlink:type="locator"/>
         <presentationArc
-          order="5"
+          order="4"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
+          xlink:from="contractor_EntityInformationAbstract"
           xlink:to="dei_CurrentFiscalYearEndDate"
           xlink:type="arc"/>
         <loc
@@ -4674,10 +4694,20 @@
           xlink:label="dei_EntityOtherIdentificationType"
           xlink:type="locator"/>
         <presentationArc
+          order="5"
+          xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+          xlink:from="contractor_EntityInformationAbstract"
+          xlink:to="dei_EntityOtherIdentificationType"
+          xlink:type="arc"/>
+        <loc
+          xlink:href="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd#dei_EntityOtherIdentificationValue"
+          xlink:label="dei_EntityOtherIdentificationValue"
+          xlink:type="locator"/>
+        <presentationArc
           order="6"
           xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-          xlink:from="contractor_DocumentAndEntityAbstract"
-          xlink:to="dei_EntityOtherIdentificationType"
+          xlink:from="contractor_EntityInformationAbstract"
+          xlink:to="dei_EntityOtherIdentificationValue"
           xlink:type="arc"/>
     </presentationLink>
 </linkbase>

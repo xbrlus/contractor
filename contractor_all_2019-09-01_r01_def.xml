@@ -7,33 +7,33 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+    <roleRef
+      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
+      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
+      xlink:type="simple"/>
     <arcroleRef
       arcroleURI="http://xbrl.org/int/dim/arcrole/all"
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
       xlink:type="simple"/>
     <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
-      xlink:type="simple"/>
-    <arcroleRef
       arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+      xlink:type="simple"/>
+    <arcroleRef
+      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
       xlink:type="simple"/>
     <roleRef
       roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfIncome"
       xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfIncome"
-      xlink:type="simple"/>
-    <roleRef
-      roleURI="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
-      xlink:href="contractor_all_2019-09-01_r01.xsd#roleType_StatementOfFinancialPosition"
       xlink:type="simple"/>
     <arcroleRef
       arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"
       xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"
       xlink:type="simple"/>
     <arcroleRef
-      arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
-      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+      arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
       xlink:type="simple"/>
     <definitionLink
       xlink:role="http://xbrl.us/contractor/v0.1/2019-09-01/roles/StatementOfFinancialPosition"
@@ -1605,31 +1605,11 @@
           xlink:to="us-gaap_DueFromAffiliateNoncurrent_1"
           xlink:type="arc"/>
         <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromStockholdersNoncurrent"
-          xlink:label="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="locator"/>
-        <definitionArc
-          order="38"
-          xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromStockholdersNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromParentNoncurrent"
-          xlink:label="contractor_DuefromParentNoncurrent"
-          xlink:type="locator"/>
-        <definitionArc
-          order="39"
-          xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromParentNoncurrent"
-          xlink:type="arc"/>
-        <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromPartnershipNoncurrent"
           xlink:label="contractor_DuefromPartnershipNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="40"
+          order="38"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_DuefromPartnershipNoncurrent"
@@ -1639,27 +1619,17 @@
           xlink:label="us-gaap_DueFromRelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="41"
+          order="39"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="us-gaap_DueFromRelatedPartiesNoncurrent"
-          xlink:type="arc"/>
-        <loc
-          xlink:href="contractor_2019-09-01_r01.xsd#contractor_DuefromSubsidiariesNoncurrent"
-          xlink:label="contractor_DuefromSubsidiariesNoncurrent"
-          xlink:type="locator"/>
-        <definitionArc
-          order="42"
-          xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
-          xlink:from="us-gaap_ReceivablesAbstract"
-          xlink:to="contractor_DuefromSubsidiariesNoncurrent"
           xlink:type="arc"/>
         <loc
           xlink:href="contractor_2019-09-01_r01.xsd#contractor_NotesReceivableAffiliateNoncurrent"
           xlink:label="contractor_NotesReceivableAffiliateNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="43"
+          order="40"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivableAffiliateNoncurrent"
@@ -1669,7 +1639,7 @@
           xlink:label="contractor_NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="44"
+          order="41"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromEmployeeStockOptionPlansNoncurrent"
@@ -1679,7 +1649,7 @@
           xlink:label="contractor_NotesReceivablefromEmployeesNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="45"
+          order="42"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromEmployeesNoncurrent"
@@ -1689,7 +1659,7 @@
           xlink:label="contractor_NotesReceivablefromLessorNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="46"
+          order="43"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromLessorNoncurrent"
@@ -1699,7 +1669,7 @@
           xlink:label="contractor_NotesReceivablefromMortgagePaymentsNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="47"
+          order="44"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromMortgagePaymentsNoncurrent"
@@ -1709,7 +1679,7 @@
           xlink:label="contractor_NotesReceivablefromOfficersNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="48"
+          order="45"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromOfficersNoncurrent"
@@ -1719,7 +1689,7 @@
           xlink:label="contractor_NotesReceivablefromOtherNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="49"
+          order="46"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromOtherNoncurrent"
@@ -1729,7 +1699,7 @@
           xlink:label="contractor_NotesReceivablefromParentNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="50"
+          order="47"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromParentNoncurrent"
@@ -1739,7 +1709,7 @@
           xlink:label="contractor_NotesReceivablefromPartnershipNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="51"
+          order="48"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromPartnershipNoncurrent"
@@ -1749,7 +1719,7 @@
           xlink:label="us-gaap_NotesReceivableRelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="52"
+          order="49"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="us-gaap_NotesReceivableRelatedPartiesNoncurrent"
@@ -1759,7 +1729,7 @@
           xlink:label="contractor_NotesReceivablefromStockholdersNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="53"
+          order="50"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromStockholdersNoncurrent"
@@ -1769,7 +1739,7 @@
           xlink:label="contractor_NotesReceivablefromSubsidiariesNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="54"
+          order="51"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromSubsidiariesNoncurrent"
@@ -1779,7 +1749,7 @@
           xlink:label="contractor_NotesReceivableTradeNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="55"
+          order="52"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivableTradeNoncurrent"
@@ -1789,7 +1759,7 @@
           xlink:label="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
           xlink:type="locator"/>
         <definitionArc
-          order="56"
+          order="53"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_NotesReceivablefromUnrelatedPartiesNoncurrent"
@@ -1799,7 +1769,7 @@
           xlink:label="contractor_AdvancesDueFromJointVenture"
           xlink:type="locator"/>
         <definitionArc
-          order="57"
+          order="54"
           xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
           xlink:from="us-gaap_ReceivablesAbstract"
           xlink:to="contractor_AdvancesDueFromJointVenture"
