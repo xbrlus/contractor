@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--extracted from OIM C:\Users\savag\OneDrive\Documents\2019 CONTRACTOR\Sample Statements\Contractor Balance Sheet Example 2.xlsx-->
+<!--extracted from OIM C:\Users\savag\OneDrive\Documents\2019 CONTRACTOR\Sample Statements\Contractor Balance Sheet Example 2 November 2019.xlsx-->
 <xbrl
   xmlns="http://www.xbrl.org/2003/instance"
   xmlns:contractor="http://xbrl.us/contractor/v0.1/2019-09-01/contractor"
@@ -23,6 +23,9 @@
     </context>
     <dei:EntityRegistrantName contextRef="c-01" id="_f_01">XYZ Contractor, LLC</dei:EntityRegistrantName>
     <dei:DocumentPeriodEndDate contextRef="c-01" id="_f_02">2017-12-31</dei:DocumentPeriodEndDate>
+    <dei:EntityTaxIdentificationNumber contextRef="c-01" id="_f_03">10-3456789</dei:EntityTaxIdentificationNumber>
+    <dei:DocumentCreationDate contextRef="c-01" id="_f_04">2018-03-31</dei:DocumentCreationDate>
+    <dei:DocumentFiscalYearFocus contextRef="c-01" id="_f_05">2017</dei:DocumentFiscalYearFocus>
     <context id="c-02">
         <entity>
             <identifier scheme="http://xbrl.org/entity/identification/scheme">01</identifier>
@@ -34,36 +37,36 @@
     <unit id="u-01">
         <measure>iso4217:USD</measure>
     </unit>
-    <us-gaap:CashAndCashEquivalentsAtCarryingValue contextRef="c-02" decimals="2" id="_f_03" unitRef="u-01">49355</us-gaap:CashAndCashEquivalentsAtCarryingValue>
-    <us-gaap:MarketableSecuritiesCurrent contextRef="c-02" decimals="2" id="_f_04" unitRef="u-01">481682</us-gaap:MarketableSecuritiesCurrent>
-    <us-gaap:BilledContractReceivables contextRef="c-02" decimals="2" id="_f_05" unitRef="u-01">351943</us-gaap:BilledContractReceivables>
-    <us-gaap:ContractReceivableRetainage contextRef="c-02" decimals="2" id="_f_06" unitRef="u-01">104648</us-gaap:ContractReceivableRetainage>
-    <contractor:DueFromStockholdersCurrent contextRef="c-02" decimals="2" id="_f_07" unitRef="u-01">51857</contractor:DueFromStockholdersCurrent>
-    <us-gaap:AssetsCurrent contextRef="c-02" decimals="2" id="_f_08" unitRef="u-01">508448</us-gaap:AssetsCurrent>
-    <us-gaap:PrepaidInsurance contextRef="c-02" decimals="2" id="_f_09" unitRef="u-01">1287</us-gaap:PrepaidInsurance>
-    <us-gaap:AssetsCurrent contextRef="c-02" decimals="2" id="_f_10" unitRef="u-01">1040772</us-gaap:AssetsCurrent>
-    <contractor:Vehicles contextRef="c-02" decimals="2" id="_f_11" unitRef="u-01">145250</contractor:Vehicles>
-    <us-gaap:FurnitureAndFixturesGross contextRef="c-02" decimals="2" id="_f_12" unitRef="u-01">63922</us-gaap:FurnitureAndFixturesGross>
-    <us-gaap:MachineryAndEquipmentGross contextRef="c-02" decimals="2" id="_f_13" unitRef="u-01">473761</us-gaap:MachineryAndEquipmentGross>
-    <us-gaap:CapitalLeasedAssetsGross contextRef="c-02" decimals="2" id="_f_14" unitRef="u-01">48822</us-gaap:CapitalLeasedAssetsGross>
-    <us-gaap:PropertyPlantAndEquipmentGross contextRef="c-02" decimals="2" id="_f_15" unitRef="u-01">731755</us-gaap:PropertyPlantAndEquipmentGross>
-    <us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment contextRef="c-02" decimals="2" id="_f_16" unitRef="u-01">-199151</us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment>
-    <us-gaap:PropertyPlantAndEquipmentNet contextRef="c-02" decimals="2" id="_f_17" unitRef="u-01">532604</us-gaap:PropertyPlantAndEquipmentNet>
-    <us-gaap:CashSurrenderValueOfLifeInsurance contextRef="c-02" decimals="2" id="_f_18" unitRef="u-01">7524</us-gaap:CashSurrenderValueOfLifeInsurance>
-    <us-gaap:Assets contextRef="c-02" decimals="2" id="_f_19" unitRef="u-01">1580900</us-gaap:Assets>
-    <us-gaap:AccountsPayableCurrent contextRef="c-02" decimals="2" id="_f_20" unitRef="u-01">290534</us-gaap:AccountsPayableCurrent>
-    <us-gaap:LinesOfCreditCurrent contextRef="c-02" decimals="2" id="_f_21" unitRef="u-01">121000</us-gaap:LinesOfCreditCurrent>
-    <us-gaap:NotesPayableCurrent contextRef="c-02" decimals="2" id="_f_22" unitRef="u-01">36221</us-gaap:NotesPayableCurrent>
-    <us-gaap:CapitalLeaseObligationsCurrent contextRef="c-02" decimals="2" id="_f_23" unitRef="u-01">15014</us-gaap:CapitalLeaseObligationsCurrent>
-    <us-gaap:AccruedPayrollTaxesCurrent contextRef="c-02" decimals="2" id="_f_24" unitRef="u-01">4705</us-gaap:AccruedPayrollTaxesCurrent>
-    <us-gaap:AccruedSalariesCurrent contextRef="c-02" decimals="2" id="_f_25" unitRef="u-01">20818</us-gaap:AccruedSalariesCurrent>
-    <wip:BillingsInExcessOfCostAndEarnings contextRef="c-02" decimals="2" id="_f_26" unitRef="u-01">44017</wip:BillingsInExcessOfCostAndEarnings>
-    <us-gaap:LiabilitiesCurrent contextRef="c-02" decimals="2" id="_f_27" unitRef="u-01">532309</us-gaap:LiabilitiesCurrent>
-    <us-gaap:LongTermNotesPayable contextRef="c-02" decimals="2" id="_f_28" unitRef="u-01">177918</us-gaap:LongTermNotesPayable>
-    <us-gaap:CapitalLeaseObligationsNoncurrent contextRef="c-02" decimals="2" id="_f_29" unitRef="u-01">28728</us-gaap:CapitalLeaseObligationsNoncurrent>
-    <us-gaap:LiabilitiesNoncurrent contextRef="c-02" decimals="2" id="_f_30" unitRef="u-01">206646</us-gaap:LiabilitiesNoncurrent>
-    <us-gaap:Liabilities contextRef="c-02" decimals="2" id="_f_31" unitRef="u-01">735955</us-gaap:Liabilities>
-    <us-gaap:MarketableSecuritiesUnrealizedGainLoss contextRef="c-01" decimals="2" id="_f_32" unitRef="u-01">10283</us-gaap:MarketableSecuritiesUnrealizedGainLoss>
-    <us-gaap:StockholdersEquity contextRef="c-02" decimals="2" id="_f_33" unitRef="u-01">841945</us-gaap:StockholdersEquity>
-    <us-gaap:LiabilitiesAndStockholdersEquity contextRef="c-02" decimals="2" id="_f_34" unitRef="u-01">1580900</us-gaap:LiabilitiesAndStockholdersEquity>
+    <us-gaap:CashAndCashEquivalentsAtCarryingValue contextRef="c-02" decimals="2" id="_f_06" unitRef="u-01">49355</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+    <us-gaap:MarketableSecuritiesCurrent contextRef="c-02" decimals="2" id="_f_07" unitRef="u-01">481682</us-gaap:MarketableSecuritiesCurrent>
+    <us-gaap:BilledContractReceivables contextRef="c-02" decimals="2" id="_f_08" unitRef="u-01">351943</us-gaap:BilledContractReceivables>
+    <us-gaap:ContractReceivableRetainage contextRef="c-02" decimals="2" id="_f_09" unitRef="u-01">104648</us-gaap:ContractReceivableRetainage>
+    <contractor:DueFromStockholdersCurrent contextRef="c-02" decimals="2" id="_f_10" unitRef="u-01">51857</contractor:DueFromStockholdersCurrent>
+    <us-gaap:AssetsCurrent contextRef="c-02" decimals="2" id="_f_11" unitRef="u-01">508448</us-gaap:AssetsCurrent>
+    <us-gaap:PrepaidInsurance contextRef="c-02" decimals="2" id="_f_12" unitRef="u-01">1287</us-gaap:PrepaidInsurance>
+    <us-gaap:AssetsCurrent contextRef="c-02" decimals="2" id="_f_13" unitRef="u-01">1040772</us-gaap:AssetsCurrent>
+    <contractor:Vehicles contextRef="c-02" decimals="2" id="_f_14" unitRef="u-01">145250</contractor:Vehicles>
+    <us-gaap:FurnitureAndFixturesGross contextRef="c-02" decimals="2" id="_f_15" unitRef="u-01">63922</us-gaap:FurnitureAndFixturesGross>
+    <us-gaap:MachineryAndEquipmentGross contextRef="c-02" decimals="2" id="_f_16" unitRef="u-01">473761</us-gaap:MachineryAndEquipmentGross>
+    <us-gaap:CapitalLeasedAssetsGross contextRef="c-02" decimals="2" id="_f_17" unitRef="u-01">48822</us-gaap:CapitalLeasedAssetsGross>
+    <us-gaap:PropertyPlantAndEquipmentGross contextRef="c-02" decimals="2" id="_f_18" unitRef="u-01">731755</us-gaap:PropertyPlantAndEquipmentGross>
+    <us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment contextRef="c-02" decimals="2" id="_f_19" unitRef="u-01">-199151</us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment>
+    <us-gaap:PropertyPlantAndEquipmentNet contextRef="c-02" decimals="2" id="_f_20" unitRef="u-01">532604</us-gaap:PropertyPlantAndEquipmentNet>
+    <us-gaap:CashSurrenderValueOfLifeInsurance contextRef="c-02" decimals="2" id="_f_21" unitRef="u-01">7524</us-gaap:CashSurrenderValueOfLifeInsurance>
+    <us-gaap:Assets contextRef="c-02" decimals="2" id="_f_22" unitRef="u-01">1580900</us-gaap:Assets>
+    <us-gaap:AccountsPayableCurrent contextRef="c-02" decimals="2" id="_f_23" unitRef="u-01">290534</us-gaap:AccountsPayableCurrent>
+    <us-gaap:LinesOfCreditCurrent contextRef="c-02" decimals="2" id="_f_24" unitRef="u-01">121000</us-gaap:LinesOfCreditCurrent>
+    <us-gaap:NotesPayableCurrent contextRef="c-02" decimals="2" id="_f_25" unitRef="u-01">36221</us-gaap:NotesPayableCurrent>
+    <us-gaap:CapitalLeaseObligationsCurrent contextRef="c-02" decimals="2" id="_f_26" unitRef="u-01">15014</us-gaap:CapitalLeaseObligationsCurrent>
+    <us-gaap:AccruedPayrollTaxesCurrent contextRef="c-02" decimals="2" id="_f_27" unitRef="u-01">4705</us-gaap:AccruedPayrollTaxesCurrent>
+    <us-gaap:AccruedSalariesCurrent contextRef="c-02" decimals="2" id="_f_28" unitRef="u-01">20818</us-gaap:AccruedSalariesCurrent>
+    <wip:BillingsInExcessOfCostAndEarnings contextRef="c-02" decimals="2" id="_f_29" unitRef="u-01">44017</wip:BillingsInExcessOfCostAndEarnings>
+    <us-gaap:LiabilitiesCurrent contextRef="c-02" decimals="2" id="_f_30" unitRef="u-01">532309</us-gaap:LiabilitiesCurrent>
+    <us-gaap:LongTermNotesPayable contextRef="c-02" decimals="2" id="_f_31" unitRef="u-01">177918</us-gaap:LongTermNotesPayable>
+    <us-gaap:CapitalLeaseObligationsNoncurrent contextRef="c-02" decimals="2" id="_f_32" unitRef="u-01">28728</us-gaap:CapitalLeaseObligationsNoncurrent>
+    <us-gaap:LiabilitiesNoncurrent contextRef="c-02" decimals="2" id="_f_33" unitRef="u-01">206646</us-gaap:LiabilitiesNoncurrent>
+    <us-gaap:Liabilities contextRef="c-02" decimals="2" id="_f_34" unitRef="u-01">735955</us-gaap:Liabilities>
+    <us-gaap:MarketableSecuritiesUnrealizedGainLoss contextRef="c-01" decimals="2" id="_f_35" unitRef="u-01">10283</us-gaap:MarketableSecuritiesUnrealizedGainLoss>
+    <us-gaap:StockholdersEquity contextRef="c-02" decimals="2" id="_f_36" unitRef="u-01">841945</us-gaap:StockholdersEquity>
+    <us-gaap:LiabilitiesAndStockholdersEquity contextRef="c-02" decimals="2" id="_f_37" unitRef="u-01">1580900</us-gaap:LiabilitiesAndStockholdersEquity>
 </xbrl>
